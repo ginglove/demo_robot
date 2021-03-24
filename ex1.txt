@@ -41,7 +41,8 @@ find all with axes xpath
 //div[@class='getting-started-topic'][3]//ancestor::a 
 
 
-Part2
+Homework 2
+Tìm các element trong mục News theo hàng ngang và hàng dọc , tìm theo Xpath Axes
 Hang doc
 
 (//DIV[@class='news-metadata'])[1]//child::a
@@ -88,3 +89,8 @@ Ngang
 //div[@class='news-item'][3]//following-sibling::a
 //div[@class='news-item'][3]//following-sibling::p
 
+Homework 3
+Tìm element Menu Điện tử - Điện lạnh và các sub-menu bên trong của Điện tử - Điện lạnh theo Xpath , Xpath Axes
+
+//SPAN[@class='text'][text()='Điện Tử - Điện Lạnh']
+(//A[@data-view-id='main_navigation_item'])[2]
