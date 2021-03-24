@@ -34,7 +34,7 @@ find all with axes xpath
 
 //div [@class='getting-started-topic-containiner'']//div//following-sibling::div
 //div[@class='download-button-container']//child::div
-//div [@class='getting-started-topic']//self::div
+//div[@class='getting-started-topic']//self::div
 //div[@class='download-button-container']//parent::div
 //div[@class='getting-started-topic'][1]//ancestor::a 
 //div[@class='getting-started-topic'][2]//ancestor::a 
@@ -45,36 +45,36 @@ Homework 2
 Tìm các element trong mục News theo hàng ngang và hàng dọc , tìm theo Xpath Axes
 Hang doc
 
-(//DIV[@class='news-metadata'])[1]//child::a
-(//DIV[@class='news-metadata'])[2]//child::a
-(//DIV[@class='news-metadata'])[3]//child::a
-(//DIV[@class='news-metadata'])[1]//child::span
-(//DIV[@class='news-metadata'])[2]//child::span
-(//DIV[@class='news-metadata'])[3]//child::span
-(//DIV[@class='news-metadata'])[1]//child::p
-(//DIV[@class='news-metadata'])[2]//child::p
-(//DIV[@class='news-metadata'])[3]//child::p
-(//DIV[@class='news-metadata'])[1]//child::h4
-(//DIV[@class='news-metadata'])[2]//child::h4
-(//DIV[@class='news-metadata'])[3]//child::h4
+//DIV[@class='news-metadata'])[1]//child::a
+//DIV[@class='news-metadata'])[2]//child::a
+//DIV[@class='news-metadata'])[3]//child::a
+//DIV[@class='news-metadata'])[1]//child::span
+//DIV[@class='news-metadata'])[2]//child::span
+//DIV[@class='news-metadata'])[3]//child::span
+//DIV[@class='news-metadata'])[1]//child::p
+//DIV[@class='news-metadata'])[2]//child::p
+//DIV[@class='news-metadata'])[3]//child::p
+//DIV[@class='news-metadata'])[1]//child::h4
+//DIV[@class='news-metadata'])[2]//child::h4
+//DIV[@class='news-metadata'])[3]//child::h4
 
 
-(//DIV[@class='news-metadata'])//ancestor::div  => ???
+//DIV[@class='news-metadata'])//ancestor::div  => ???
 
 
 
-(//DIV[@class='news-description'])[1]//child::div
-(//DIV[@class='news-description'])[2]//child::div
-(//DIV[@class='news-description'])[3]//child::div
-(//DIV[@class='news-description'])[1]//child::a
-(//DIV[@class='news-description'])[2]//child::a
-(//DIV[@class='news-description'])[3]//child::a
-(//DIV[@class='news-description'])[1]//child::span
-(//DIV[@class='news-description'])[2]//child::span
-(//DIV[@class='news-description'])[3]//child::span
-(//DIV[@class='news-description'])[1]//child::p
-(//DIV[@class='news-description'])[2]//child::p
-(//DIV[@class='news-description'])[3]//child::p
+//DIV[@class='news-description'])[1]//child::div
+//DIV[@class='news-description'])[2]//child::div
+//DIV[@class='news-description'])[3]//child::div
+//DIV[@class='news-description'])[1]//child::a
+//DIV[@class='news-description'])[2]//child::a
+//DIV[@class='news-description'])[3]//child::a
+//DIV[@class='news-description'])[1]//child::span
+//DIV[@class='news-description'])[2]//child::span
+//DIV[@class='news-description'])[3]//child::span
+//DIV[@class='news-description'])[1]//child::p
+//DIV[@class='news-description'])[2]//child::p
+//DIV[@class='news-description'])[3]//child::p
 
 Ngang
 //div[@class='news-item'][1]//following-sibling::div  
@@ -92,5 +92,22 @@ Ngang
 Homework 3
 Tìm element Menu Điện tử - Điện lạnh và các sub-menu bên trong của Điện tử - Điện lạnh theo Xpath , Xpath Axes
 
-//SPAN[@class='text'][text()='Điện Tử - Điện Lạnh']
-(//A[@data-view-id='main_navigation_item'])[2]
+Homework4
+Tìm các element trong Table Browser Support , tìm theo hàng ngang và hàng dọc
+Hàng ngang
+//th[1]
+//th[2]
+//th[3]
+//th[4]
+//th[5]
+//th[6]
+//th[7]
+//th[@class='bsChrome']
+//th[@class='bsEdge']
+//th[@class='bsFirefox']
+//th[@class='bsSafari']
+//th[@class='bsOpera']
+//TD[7]
+//TD)[8]
+//TD)[9]
+//TD)[10]
