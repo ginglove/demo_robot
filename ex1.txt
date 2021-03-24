@@ -95,19 +95,11 @@ Tìm element Menu Điện tử - Điện lạnh và các sub-menu bên trong c�
 Homework4
 Tìm các element trong Table Browser Support , tìm theo hàng ngang và hàng dọc
 Hàng ngang
-//th[1]
-//th[2]
-//th[3]
-//th[4]
-//th[5]
-//th[6]
-//th[7]
-//th[@class='bsChrome']
+//table[@class='browserref notranslate']//child::td[1]
+//table[@class='browserref notranslate']//child::td[6]
+//th[@class='bsChrome'] hoặc //table[@class='browserref notranslate']//child::th[2]
 //th[@class='bsEdge']
 //th[@class='bsFirefox']
 //th[@class='bsSafari']
 //th[@class='bsOpera']
-//TD[7]
-//TD)[8]
-//TD)[9]
-//TD)[10]
+
