@@ -1,0 +1,40 @@
+homework 1: https://www.selenium.dev/
+
+/html/body/section[2]/h2
+/html/body/section[2]/div[1]
+/html/body/section[2]/div[1]/div[1]
+/html/body/section[2]/div[1]/div[2]
+/html/body/section[2]/div[1]/div[3]
+
+Find with relative xpath
+
+
+//div[@class='getting-started-topic-container']
+//div[@class='getting-started-topic-container']//div[@class='getting-started-topic']
+//div[@class='getting-started-topic-container']//div[@class='getting-started-logo-container']
+//div[@class='getting-started-topic']//img[@src='/images/selenium_logo_square_red.png']  
+//div[@class='getting-started-topic-container']//h3[@class='webdriver-header']
+//div[@class='getting-started-topic-container']//h3[@class='ide-header']
+//div[@class='getting-started-topic-container']//h3[@class='grid-header']
+//div[@class='getting-started-topic'][1]//p
+//div[@class='getting-started-topic'][2]//p
+//div[@class='getting-started-topic'][3]//p
+//div[@class='getting-started-topic-container']//div[@class='download-button-container']
+//div[@class='download-button-container'][1]//a
+
+
+//div[@class='getting-started-topic-container']//div[@class='getting-started-topic']
+//div[@class='getting-started-topic']//img[@src='/images/selenium_ide_logo_square.png'] 
+
+
+//div[@class='getting-started-topic']//img[@src='/images/selenium_grid_logo_square.png'] 
+
+
+find all with axes xpath 
+//div [@class='getting-started-topic-container']//following::div
+//div [@class='getting-started-topic-container']//following::img
+//div [@class='getting-started-topic']//following::h3
+
+//div [@class='getting-started-topic-containiner'']//div//following-sibling::div
+//div[@class='download-button-container']//child::div
+
