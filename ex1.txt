@@ -22,11 +22,8 @@ Find with relative xpath
 //div[@class='getting-started-topic-container']//div[@class='download-button-container']
 //div[@class='download-button-container'][1]//a
 
-
 //div[@class='getting-started-topic-container']//div[@class='getting-started-topic']
 //div[@class='getting-started-topic']//img[@src='/images/selenium_ide_logo_square.png'] 
-
-
 //div[@class='getting-started-topic']//img[@src='/images/selenium_grid_logo_square.png'] 
 
 
@@ -37,4 +34,57 @@ find all with axes xpath
 
 //div [@class='getting-started-topic-containiner'']//div//following-sibling::div
 //div[@class='download-button-container']//child::div
+//div [@class='getting-started-topic']//self::div
+//div[@class='download-button-container']//parent::div
+//div[@class='getting-started-topic'][1]//ancestor::a 
+//div[@class='getting-started-topic'][2]//ancestor::a 
+//div[@class='getting-started-topic'][3]//ancestor::a 
+
+
+Part2
+Hang doc
+
+(//DIV[@class='news-metadata'])[1]//child::a
+(//DIV[@class='news-metadata'])[2]//child::a
+(//DIV[@class='news-metadata'])[3]//child::a
+(//DIV[@class='news-metadata'])[1]//child::span
+(//DIV[@class='news-metadata'])[2]//child::span
+(//DIV[@class='news-metadata'])[3]//child::span
+(//DIV[@class='news-metadata'])[1]//child::p
+(//DIV[@class='news-metadata'])[2]//child::p
+(//DIV[@class='news-metadata'])[3]//child::p
+(//DIV[@class='news-metadata'])[1]//child::h4
+(//DIV[@class='news-metadata'])[2]//child::h4
+(//DIV[@class='news-metadata'])[3]//child::h4
+
+
+(//DIV[@class='news-metadata'])//ancestor::div  => ???
+
+
+
+(//DIV[@class='news-description'])[1]//child::div
+(//DIV[@class='news-description'])[2]//child::div
+(//DIV[@class='news-description'])[3]//child::div
+(//DIV[@class='news-description'])[1]//child::a
+(//DIV[@class='news-description'])[2]//child::a
+(//DIV[@class='news-description'])[3]//child::a
+(//DIV[@class='news-description'])[1]//child::span
+(//DIV[@class='news-description'])[2]//child::span
+(//DIV[@class='news-description'])[3]//child::span
+(//DIV[@class='news-description'])[1]//child::p
+(//DIV[@class='news-description'])[2]//child::p
+(//DIV[@class='news-description'])[3]//child::p
+
+Ngang
+//div[@class='news-item'][1]//following-sibling::div  
+//div[@class='news-item'][1]//following-sibling::a
+//div[@class='news-item'][1]//following-sibling::p
+
+//div[@class='news-item'][2]//following-sibling::div  
+//div[@class='news-item'][2]//following-sibling::a
+//div[@class='news-item'][2]//following-sibling::p
+
+//div[@class='news-item'][3]//following-sibling::div  
+//div[@class='news-item'][3]//following-sibling::a
+//div[@class='news-item'][3]//following-sibling::p
 
