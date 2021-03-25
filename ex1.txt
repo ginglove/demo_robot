@@ -122,7 +122,7 @@ các deal còn lại tương tự
 //div[@class='col-6 col-lg-3'][3]//i[@class='fas fa-ticket-alt text-danger mr-2']
 //div[@class='col-6 col-lg-3'][3]//div[@class='card-footer bg-white']
 
-Homework6
+Homework6 Shopee.vn
 //div[@class='flex v-center _2oiwpp']//a[@href='//banhang.shopee.vn']
 //a[@href='/web/']
 //div[@class='flex v-center _2oiwpp']//div[@class='shopee-drawer ']
@@ -138,11 +138,17 @@ Homework6
 (//DIV[@role='button'])[1]//a
 (//DIV[@role='button'])[1]//span
 svg[@class='shopee-svg-icon icon-notification-2'] =???
-//UL[@class='navbar__links']//a[@rel='noopener noreferrer']
-//UL[@class='navbar__links']//a[@rel='noopener noreferrer']//div
-//UL[@class='navbar__links']//a[@rel='noopener noreferrer']//span
-//UL[@class='navbar__links']//a[@rel='noopener noreferrer']//following-sibling::a[1]
-//UL[@class='navbar__links']//a[@rel='noopener noreferrer']//following-sibling::a[2]
-//UL[@class='navbar__links']//a[@rel='noopener noreferrer']//following-sibling::div
+//ul[@class='navbar__links']//a[@rel='noopener noreferrer']
+//ul[@class='navbar__links']//a[@rel='noopener noreferrer']//div
+//ul[@class='navbar__links']//a[@rel='noopener noreferrer']//span
+//ul[@class='navbar__links']//a[@rel='noopener noreferrer']//following-sibling::a[1]
+//ul[@class='navbar__links']//a[@rel='noopener noreferrer']//following-sibling::a[2]
+//ul[@class='navbar__links']//a[@rel='noopener noreferrer']//following-sibling::div
 
-Homework7
+//div[@class='shopee-popup__close-btn']
+xpath=//input[@type='text']
+xpath=//input[@type='password']
+
+Google
+
+//input[@class='gLFyf gsfi']

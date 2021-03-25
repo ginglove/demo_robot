@@ -1,18 +1,23 @@
 *** Settings ***
 Library         SeleniumLibrary
 Resource        ../0_resource/resource.robot
- 
+Documentation   baitap1
 
 *** Test Cases ***
 Demo Test by Hien
-
-    Open Browser    ${url}  ${Browser} 
-    Click element           xpath=//div[@class='shopee-popup__close-btn']
-    Click element           xpath=//UL[@class='navbar__links']//a[@rel='noopener noreferrer']//following-sibling::a[2]
-    Maximize Browser Window
-    Set Selenium Speed  ${delay}
-
+    [Documentation]     baitap1voishopee
+    lauching
+        
+Testcase log in
+    Click element       ${btn_openlogin}
+    input text  xpath=//input[@type='text']     abc 
+    input text  xpath=//input[@type='password']     123
+    Click element        ${btn_login}
     Close Browser
 
-***Keywords***
-    [KW]-lauching
+*** Keywords ***
+lauching
+    Open Browser    ${url}  ${Browser} 
+    Click element           xpath=//div[@class='shopee-popup__close-btn']
+    Maximize Browser Window
+    Set Selenium Speed  ${delay}
