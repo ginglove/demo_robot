@@ -103,3 +103,46 @@ Hàng ngang
 //th[@class='bsSafari']
 //th[@class='bsOpera']
 
+Homework5
+https://vinid.net/ Tìm các element voucher giảm giá thuộc các deal
+các deal còn lại tương tự 
+//div[@class='col-6 col-lg-3'][1]//strong
+//div[@class='col-6 col-lg-3'][2]//strong
+//div[@class='col-6 col-lg-3'][3]//strong
+//div[@class='col-6 col-lg-3'][4]//strong
+(tất cả element trong deal)
+//div[@class='col-6 col-lg-3'][3]//div[@id='post-65749']
+//div[@class='col-6 col-lg-3'][3]//a[@rel='bookmark']
+//div[@class='col-6 col-lg-3'][3]//a[@class='text-dark']
+//div[@class='col-6 col-lg-3'][3]//img
+//div[@class='col-6 col-lg-3'][3]//div[@class='card-body']
+//div[@class='col-6 col-lg-3'][3]//h3
+//div[@class='col-6 col-lg-3'][3]//p
+//div[@class='col-6 col-lg-3'][3]//i[@class='far fa-clock mr-1']
+//div[@class='col-6 col-lg-3'][3]//i[@class='fas fa-ticket-alt text-danger mr-2']
+//div[@class='col-6 col-lg-3'][3]//div[@class='card-footer bg-white']
+
+Homework6
+//div[@class='flex v-center _2oiwpp']//a[@href='//banhang.shopee.vn']
+//a[@href='/web/']
+//div[@class='flex v-center _2oiwpp']//div[@class='shopee-drawer ']
+//div[@class='flex _2QcfeN _3EM-Li']
+//a[@title='Kết nối Facebook']
+//a[@title='Kết nối Instagram']
+
+//div[@role='button'][1]
+//[@class='navbar__links']
+//UL[@class='navbar__links']//li
+//UL[@class='navbar__links']//div[@class='stardust-popover']
+
+(//DIV[@role='button'])[1]//a
+(//DIV[@role='button'])[1]//span
+svg[@class='shopee-svg-icon icon-notification-2'] =???
+//UL[@class='navbar__links']//a[@rel='noopener noreferrer']
+//UL[@class='navbar__links']//a[@rel='noopener noreferrer']//div
+//UL[@class='navbar__links']//a[@rel='noopener noreferrer']//span
+//UL[@class='navbar__links']//a[@rel='noopener noreferrer']//following-sibling::a[1]
+//UL[@class='navbar__links']//a[@rel='noopener noreferrer']//following-sibling::a[2]
+//UL[@class='navbar__links']//a[@rel='noopener noreferrer']//following-sibling::div
+
+Homework7
