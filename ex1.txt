@@ -59,7 +59,7 @@ Hang doc
 //DIV[@class='news-metadata'])[3]//child::h4
 
 
-//DIV[@class='news-metadata'])//ancestor::div  => ???
+//DIV[@class='news-item'])[1]//ancestor::div  => ok
 
 
 
