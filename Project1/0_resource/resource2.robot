@@ -2,4 +2,4 @@
 ${url}          https://google.com.vn/
 ${Browser}      Chrome
 ${delay}        0
-${search}  
+${searchtextbox}      xpath=//input[@class='gLFyf gsfi'] 
