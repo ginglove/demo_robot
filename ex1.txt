@@ -152,3 +152,8 @@ xpath=//input[@type='password']
 Google
 
 //input[@class='gLFyf gsfi']
+run keyword if input text  ${searchtextbox} "SmartOSC" keyword1
+keyword1
+input text  ${searchtextbox} "SmartOSC Fintech"
+
+Dantri
