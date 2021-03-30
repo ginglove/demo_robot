@@ -9,19 +9,19 @@ Test Teardown           close all browsers
 *** Variables ***
   
 *** Test Cases ***
-1. Create list keyword
-    @{list}     Create list     SmartOSC    SmartOSC Fintech     Covid       Covid-19     
+# 1. Create list keyword
+#     @{list}     Create list     SmartOSC    SmartOSC Fintech     Covid       Covid-19     
     
     
-2. Find Element using Get WebElement and iteraction with element
-    Go to           ${url}
-    ${txt_search}    Get WebElement     //input[@title='Tìm kiếm']
-    Input text    ${txt_search}     robot
-    Sleep   4s
+# 2. Find Element using Get WebElement and iteraction with element
+#     Go to           ${url}
+#     ${txt_search}    Get WebElement     //input[@title='Tìm kiếm']
+#     Input text    ${txt_search}     robot
+#     Sleep   4s
 
 3 . Search list keyword in https://google.com.vn
     @{list}     Create list     SmartOSC    SmartOSC Fintech     Covid       Covid-19
-    [Kw] Search list keywords       @{list}
+    Arguments from list          @{list}
         
 4. Search list keyword using for conditions
      @{list}     Create list     SmartOSC    SmartOSC Fintech     Covid       Covid-19
@@ -32,11 +32,22 @@ Test Teardown           close all browsers
 
 
 *** Keywords ***
-[Kw] Search list keywords 
+Arguments from list 
     [Arguments]     @{list}  
-    ${arg}   Get from list    ${list}     1 
+    ${arg}   Get from list    ${list}     0
     input text      ${searchtextbox}    ${arg}
     submit form
+    sleep   2s 
+    ${arg}  Get from list    ${list}     2
+    input text      ${searchtextbox}    ${arg}
+    submit form
+    ${arg}  Get from list    ${list}     1
+    input text      ${searchtextbox}    ${arg}
+    submit form
+    ${arg}  Get from list    ${list}     3
+    input text      ${searchtextbox}    ${arg}
+    submit form
+    
 lauching
     Open Browser    ${url}  ${Browser} 
     Maximize Browser Window
