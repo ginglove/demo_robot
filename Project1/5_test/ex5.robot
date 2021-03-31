@@ -2,7 +2,7 @@
 Library                 SeleniumLibrary 
 Library                 Collections
 Resource                ../0_resource/resource3.robot
-Documentation           Use [Arguments] to define input value with keyword 
+Documentation           Get list element in Menu of dantri
 Test Setup              lauching
 Test Teardown           close all browsers
 
@@ -47,4 +47,5 @@ Test Teardown           close all browsers
     Lists should be equal        ${expected}     ${actual}          khong giong nhau
 
 2 . Get list element in Menu of dantri
+    ${elements}=    Get WebElements    //div[@class='container']//li[@class='dropdown dropdown--hover']
     log many    @{elements}
