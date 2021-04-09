@@ -24,6 +24,8 @@ ${rdBtn_shippingAddressGroupName}    shipping_address_choice
 ${rdBtn_shippingAddressValue}        billing                                            
 ${rdBtn_paymentgroupname}            payment[method]                                    
 ${rdBtn_paymentvalue}                p2c2p_cc
+${onePgSuccess_orderNumber_guest}   xpath://span[@class='order-number']
+${onePgSuccess_orderNumber_customer}   xpath://a[@class='order-number']/strong
 *** Keywords ***
 Click Proceed to Checkout button
     #wait Until location is   ${checkoutPage_url}
@@ -60,9 +62,16 @@ Perform Payment steps from 3rd party
     select from list by label        ${exp_year}      2026
     input text                       ${cvv}           123
     click element                    ${btn_submit}    
-Verify thank you page
-    wait until element is visible    ${idOrder}
-    ${idOrder}                       Get Text      ${onePageSuccess_orderNumber}
-    Should Not Be Empty              ${idOrder}    
+Verify thank you page guest
+    wait until element is visible    ${onePgSuccess_orderNumber_guest}   20s
+    ${idOrder}                       Get Text      ${onePgSuccess_orderNumber_guest}   
+    Should Not Be Empty              ${idOrder} 
+    Page should contains               Thank you for your order
+Verify thank you page customer
+     wait until element is visible    ${onePgSuccess_orderNumber_customer}   60s
+    ${idOrder}                       Get Text      ${onePgSuccess_orderNumber_customer}  
+    Should Not Be Empty              ${idOrder} 
+    Page should contain               Thank you for your order
+    
 
 

@@ -8,8 +8,8 @@ Resource         ../0_resource/Variable.robot
 Resource         ../0_resource/wishlist.robot
 Documentation    E2E Guest Checkout/ Customer checkout
 
-Test Setup       launching
-# Test Teardown    close all browsers
+Test Setup        launching
+#Test Teardown    close all browsers
 
 *** Test Cases ***
 # Verify check out with guest
@@ -20,13 +20,13 @@ Test Setup       launching
 
 #    Perform Payment steps from 3rd party
 #    Sleep                                   12s
-#    Verify thank you page
+#    Verify thank you page guest
 Verify check out with customer
     Go on Login Page
     Login with Valid Credential
     Verify Successful Login
     Click on logo
-        Add to wishlist 
+    Add to wishlist 
     Product Quantity Number
     Verify Update Wish List Successfully
     Minus product quantity
@@ -35,7 +35,7 @@ Verify check out with customer
     Click Proceed to Checkout button
     Fill shipping infomation
     Perform Payment steps from 3rd party
-    Verify thank you page
+    Verify thank you page customer
 
 
 
