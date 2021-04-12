@@ -1,12 +1,5 @@
 
-*** Variables ***
-${label_login}                       //a[contains(text(),'Login or Sign Up')]
-${label_account}                     //li[@class='my-account-link']
-${btn_miniCart}                      //a[@class='action showcart']
-${btn_viewCart}                      //a[@class='actions viewcart']
-${popup_addToCart_result}            //div[@id='mb-ajaxsuite-popup-wrapper']
-${strong_result}                     //div[contains(@class,'mb-login-popup-title')]/strong
-${home_closeAddToCartResultPopup}    //a[@id='mb-ajaxsuite-close']
+
 
 *** Keywords ***
 Go on Login Page

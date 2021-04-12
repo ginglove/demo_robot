@@ -4,7 +4,7 @@ Library    SeleniumLibrary
 
 *** Keywords ***
 Verify location link
-    Location Should Be              ${checkoutPage_url}    
+    Location Should Be    ${checkoutPage_url}    
 Click Proceed to Checkout button
     wait until element is visible    ${label_checkout}
     Click Element                    ${label_checkout} 
@@ -32,7 +32,7 @@ Fill shipping infomation
     Wait For Condition           return jQuery.active == 0
     click element                ${btn_placeorder}
 Perform Payment steps from 3rd party
-    
+
     wait until element is visible    ${cardno}        20s
     input text                       ${cardno}        378734493671000
     input text                       ${cardname}      tieuthotho
@@ -41,10 +41,10 @@ Perform Payment steps from 3rd party
     input text                       ${cvv}           123
     click element                    ${btn_submit}    
 Verify thank you page guest
-    wait until element is visible    ${onePgSuccess_orderNumber_guest}    20s
+    wait until element is visible    ${onePgSuccess_orderNumber_guest}    40s
     ${idOrder}                       Get Text                             ${onePgSuccess_orderNumber_guest}    
     Should Not Be Empty              ${idOrder} 
-    Page should contain             Thank you for your order
+    Page should contain              Thank you for your order
 Verify thank you page customer
     wait until element is visible    ${onePgSuccess_orderNumber_customer}    60s
     ${idOrder}                       Get Text                                ${onePgSuccess_orderNumber_customer}    
