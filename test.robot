@@ -1,6 +1,9 @@
 *** Settings ***
 Library           SeleniumLibrary
 
+*** Variables ***
+Variables    /Variale/variable.txt
+
 
 *** Test Cases ***
 Demo Test
