@@ -3,13 +3,7 @@
 Library    SeleniumLibrary
 Library    BuiltIn 
 *** Variables ***
-${btn_plus}             //button[@class='btn-plus'][1]
-${btn_minus}            //button[@class='btn-minus'][1]     
-${update_wishlist}      //button[@class='action update']
-${btn_addalltocart}     //button[@class='action tocart']
-${btn_minicart1}        //A[contains(@class,'action showcart')]
-${wishList_quantity}    //input[@class='input-text qty']
-${btn_viewcart}         //a[@class='actions viewcart']
+
 ***Keywords***
 # Edit wishlist
 #    #wait until location is    https://uat.b2s.co.th/wishlist/
@@ -44,15 +38,16 @@ Minus product quantity
     Should Be Equal As Integers    ${actualQuantity1}    ${expectedQuantity} 
 
 Add wishlist to cart
-    click element    ${btn_addalltocart}   
-    # Wait For Condition               return jQuery.active == 0 
-    wait until element is visible      //span[@class='counter qty']     20s
-Select minicart
-    
+    click element                    ${btn_addalltocart}             
     # Wait For Condition               return jQuery.active == 0
-    click element                    ${btn_minicart1}
-    # wait until element is visible    //DIV[@id='ui-id-1']         
-    click element                    ${btn_viewcart}
+    wait until element is visible    //span[@class='counter qty']    20s
+
+Select minicart
+
+    # Wait For Condition               return jQuery.active == 0
+    click element    ${btn_minicart1}
+    # wait until element is visible    //DIV[@id='ui-id-1']
+    click element    ${btn_viewcart}
 
 
 
