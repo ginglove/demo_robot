@@ -27,3 +27,37 @@ Homework1:Tìm tất cả element trong ảnh theo Xpath , Xpath Axes
 //*[@class='grid-header']//following::p[1]
 //*[@class='download-button grid']
 
+Homework2:Tìm các element trong mục News theo hàng ngang và hàng dọc , tìm theo Xpath Axes
+--Hàng ngang
+//*[@class='news-header']/following-sibling::div[1]
+//*[@class='news-header']/following-sibling::div[2]
+//*[@class='news-header']/following-sibling::div[3]
+-- Hàng dọc---left
+//*[text()="Thursday, April 08, 2021 by "]/parent::div
+//*[text()="Thursday, April 08, 2021 by "]/parent::div/h4
+//*[text()="Thursday, April 08, 2021 by "]
+
+//*[text()="Thursday, March 25, 2021 by "]/parent::div  
+//*[text()="Thursday, March 25, 2021 by "]/parent::div/h4  OR //*[@class='news-header']/following-sibling::div[2]//h4
+//*[text()="Thursday, March 25, 2021 by "]
+
+//*[text()="Thursday, March 11, 2021 by "]/parent::div
+//*[text()="Thursday, March 11, 2021 by "]/parent::div/h4
+//*[text()="Thursday, March 11, 2021 by "]
+
+//*[text()="Thursday, March 11, 2021 by "]/parent::div
+//*[text()="Thursday, March 11, 2021 by "]/parent::div/h4
+//*[text()="Thursday, March 11, 2021 by "]
+
+-- Hàng dọc---Right
+//p[text()="Public Project Meeting - April 08, 2021"]
+//p[text()="Public Project Meeting - April 08, 2021"]/following-sibling::a/div
+
+//p[text()="Public Project Meeting - March 25, 2021"]
+//p[text()="Public Project Meeting - March 25, 2021"]/following-sibling::a/div
+
+//p[text()="Public Project Meeting - March 11, 2021"]
+//p[text()="Public Project Meeting - March 11, 2021"]/following-sibling::a/div
+
+-----
+
