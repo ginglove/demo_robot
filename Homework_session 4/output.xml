@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.8.9 on win32)" generated="20210415 17:31:29.542" rpa="false" schemaversion="2">
+<suite id="s1" name="Test2" source="C:\Users\huongtn\robot_training\Homework_session 4\Test2.robot">
+<test id="s1-t1" name="Testcase 3">
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${string1}' != 'SmartOSC'</arg>
+<arg>Search SmartOSC</arg>
+<arg>ELSE</arg>
+<arg>Search SmartOSC Fintech</arg>
+<arg>test</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Search SmartOSC Fintech">
+<arg>test</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210415 17:31:29.832" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20210415 17:31:29.832" endtime="20210415 17:31:32.905"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210415 17:31:32.906" endtime="20210415 17:31:32.913"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${textbox}</arg>
+<arg>${string1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210415 17:31:32.914" level="INFO">Typing text 'test' into text field '//*[@title='Tìm kiếm']'.</msg>
+<status status="PASS" starttime="20210415 17:31:32.914" endtime="20210415 17:31:33.006"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${searchbutton}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20210415 17:31:33.006" endtime="20210415 17:31:33.035"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${searchbutton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210415 17:31:33.036" level="INFO">Clicking element '//*[@role='listbox']/following-sibling::div//input[@type='submit']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210415 17:31:33.648" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210415 17:31:33.063" endtime="20210415 17:31:33.648"/>
+</kw>
+<msg timestamp="20210415 17:31:33.652" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=89.0.4389.114)
+</msg>
+<status status="FAIL" starttime="20210415 17:31:33.035" endtime="20210415 17:31:33.652"/>
+</kw>
+<status status="FAIL" starttime="20210415 17:31:29.831" endtime="20210415 17:31:33.652"/>
+</kw>
+<status status="FAIL" starttime="20210415 17:31:29.830" endtime="20210415 17:31:33.652"/>
+</kw>
+<status status="FAIL" starttime="20210415 17:31:29.829" endtime="20210415 17:31:33.653">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=89.0.4389.114)
+</status>
+</test>
+<status status="FAIL" starttime="20210415 17:31:29.545" endtime="20210415 17:31:33.655"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test2">Test2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
