@@ -1,18 +1,19 @@
 *** Settings ***
 Library          SeleniumLibrary
-Resource         ../4_keywords/HomePage.robot
-Resource         ../4_keywords/LoginPage.robot
-Resource         ../4_keywords/Checkout.robot
-Resource         ../4_keywords/common.robot
+Resource         ../4_keywords/Pageobject/HomePage.robot
+Resource         ../4_keywords/Pageobject/LoginPage.robot
+Resource         ../4_keywords/Pageobject/Checkout.robot
+Resource         ../4_keywords/Pageobject/Common.robot
 Resource         ../0_resource/Variable.robot
-Resource         ../4_keywords/wishlist.robot
+Resource         ../4_keywords/Pageobject/Wishlist.robot
 Documentation    E2E Guest Checkout/ Customer checkout
 
 Test Setup       launching
 Test Teardown    close all browsers
 
 *** Test Cases ***
-Verify check out with guest
+TC1:Verify check out with guest
+    
     Add to Cart
     Verify Successful Add to Cart
     Verify location link
@@ -20,7 +21,8 @@ Verify check out with guest
     Fill shipping infomation 
     Perform Payment steps from 3rd party
     Verify thank you page guest
-Verify check out with customer
+TC2:Verify check out with customer
+    
     Go on Login Page
     Login with Valid Credential
     Verify Successful Login
