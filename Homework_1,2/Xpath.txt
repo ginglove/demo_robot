@@ -1,0 +1,63 @@
+Homework1:Tìm tất cả element trong ảnh theo Xpath , Xpath Axes
+
+//*[contains(text(),"Selenium automates browsers. That's it!")]
+//*[contains(text(),"What you do with that power is entirely up to you.")]
+//*[contains(text(),"Primarily it is for automating web applications")] or //*[@class='body-large'][1]
+
+//*[@class='body-large' and contains(text(),"Boring web-based administration tasks")] or or //*[@class='body-large'][2]
+
+--Xpath of "Getting Started" area , by text
+//h2[text()='Getting Started']
+
+--Xpath Selenium webdriver area
+//*[@src='/images/selenium_logo_square_red.png'] ( OR //*[@class='getting-started-logo' and @src="/images/selenium_logo_square_red.png"] )
+//*[@class='webdriver-header']
+//*[@class='webdriver-header']//following::p[1]
+//*[@class='download-button webdriver']
+
+--Xpath Selenium IDE area
+//*[@src='/images/selenium_ide_logo_square.png']
+//*[@class='ide-header']
+//*[@class='ide-header']//following::p[1]
+//*[@class='download-button ide']
+
+--Xpath Selenium Grid area
+//*[@src='/images/selenium_grid_logo_square.png']
+//*[@class='grid-header']
+//*[@class='grid-header']//following::p[1]
+//*[@class='download-button grid']
+
+Homework2:Tìm các element trong mục News theo hàng ngang và hàng dọc , tìm theo Xpath Axes
+--Hàng ngang
+//*[@class='news-header']/following-sibling::div[1]
+//*[@class='news-header']/following-sibling::div[2]
+//*[@class='news-header']/following-sibling::div[3]
+-- Hàng dọc---left
+//*[text()="Thursday, April 08, 2021 by "]/parent::div
+//*[text()="Thursday, April 08, 2021 by "]/parent::div/h4
+//*[text()="Thursday, April 08, 2021 by "]
+
+//*[text()="Thursday, March 25, 2021 by "]/parent::div  
+//*[text()="Thursday, March 25, 2021 by "]/parent::div/h4  OR //*[@class='news-header']/following-sibling::div[2]//h4
+//*[text()="Thursday, March 25, 2021 by "]
+
+//*[text()="Thursday, March 11, 2021 by "]/parent::div
+//*[text()="Thursday, March 11, 2021 by "]/parent::div/h4
+//*[text()="Thursday, March 11, 2021 by "]
+
+//*[text()="Thursday, March 11, 2021 by "]/parent::div
+//*[text()="Thursday, March 11, 2021 by "]/parent::div/h4
+//*[text()="Thursday, March 11, 2021 by "]
+
+-- Hàng dọc---Right
+//p[text()="Public Project Meeting - April 08, 2021"]
+//p[text()="Public Project Meeting - April 08, 2021"]/following-sibling::a/div
+
+//p[text()="Public Project Meeting - March 25, 2021"]
+//p[text()="Public Project Meeting - March 25, 2021"]/following-sibling::a/div
+
+//p[text()="Public Project Meeting - March 11, 2021"]
+//p[text()="Public Project Meeting - March 11, 2021"]/following-sibling::a/div
+
+-----
+
