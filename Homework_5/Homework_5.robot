@@ -5,25 +5,29 @@ Library     Collections
 Resource       ../Variable/Variable.robot
 
 *** Variables ***
-
  
 *** Keywords ***
 Search
-     [Arguments]        ${keyword}   
-    Input Text     //*[@title='Tìm kiếm']     ${keyword}  
-    Wait Until Page Contains Element     //*[@role="listbox"]/parent::div/div[2]/center/input[1]     20s
+    [Arguments]        ${keyword}  
+    ${tbl_search}    Get WebElement     //*[@title='Tìm kiếm']
+    ${btn_googlesearch}     Get WebElement    //*[@role="listbox"]/parent::div/div[2]/center/input[1]
+    Input Text          ${tbl_search}         ${keyword}  
+    Wait Until Page Contains Element     ${btn_googlesearch}     20s
     BuiltIn.Sleep    1
-    Click Element      //*[@role="listbox"]/parent::div/div[2]/center/input[1]
+    Click Element      ${btn_googlesearch}
 
 *** Test Cases ***
 HomeWork Session5
+
     Open Browser    ${Google_url}    ${browser}
     Maximize Browser Window
-    Wait Until Page Contains Element     //*[@title='Tìm kiếm']     20s
-
+    # ${tbl_search}    Get WebElement     //*[@title='Tìm kiếm']
+    # ${btn_googlesearch}     Get WebElement    //*[@role="listbox"]/parent::div/div[2]/center/input[1]
+    # Wait Until Page Contains Element     ${tbl_search}     20s
+    Sleep    1
     FOR    ${robot}      IN    @{Keywords} 
         Search    ${robot}
-        go back
+         go back
     END
     Close Browser
                   
