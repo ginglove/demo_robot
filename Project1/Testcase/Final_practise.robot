@@ -6,6 +6,7 @@ Resource         ../keywords/Pageobject/Checkout.robot
 Resource         ../keywords/Pageobject/Common.robot
 Resource         ../resource/Element_final.robot
 Resource         ../keywords/Pageobject/Wishlist.robot
+Resource         ../resource/Data_final.robot
 Documentation    E2E Guest Checkout/ Customer checkout
 
 Test Setup       launching
@@ -13,7 +14,7 @@ Test Teardown    close all browsers
 
 *** Test Cases ***
 TC1:Verify check out with guest
-    
+
     Add to Cart
     Verify Successful Add to Cart
     Verify location link
@@ -22,7 +23,7 @@ TC1:Verify check out with guest
     Perform Payment steps from 3rd party
     Verify thank you page guest
 TC2:Verify check out with customer
-    
+
     Go on Login Page
     Login with Valid Credential
     Verify Successful Login
