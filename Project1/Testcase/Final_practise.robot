@@ -1,12 +1,12 @@
 *** Settings ***
 Library          SeleniumLibrary
-Resource         ../keywords/Pageobject/HomePage.robot
-Resource         ../keywords/Pageobject/LoginPage.robot
-Resource         ../keywords/Pageobject/Checkout.robot
-Resource         ../keywords/Pageobject/Common.robot
-Resource         ../resource/Element_final.robot
-Resource         ../keywords/Pageobject/Wishlist.robot
-Resource         ../resource/Data_final.robot
+Resource         ../Keywords/Pageobject/HomePage.robot
+Resource         ../Keywords/Pageobject/LoginPage.robot
+Resource         ../Keywords/Pageobject/Checkout.robot
+Resource         ../Keywords/Pageobject/Common.robot
+Resource         ../Resource/Element_final.robot
+Resource         ../Keywords/Pageobject/Wishlist.robot
+Resource         ../Resource/Data_final.robot
 Documentation    E2E Guest Checkout/ Customer checkout
 
 Test Setup       launching
