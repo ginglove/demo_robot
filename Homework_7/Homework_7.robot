@@ -16,7 +16,7 @@ HomeWork Session 7 - Homework 1
     Open Browser    ${url}    ${browser}
     Maximize Browser Window
     Sleep    1
-    @{List A}    Create List   Home     THỜI SỰ    CHỨNG KHOÁN    BẤT ĐỘNG SẢN    DOANH NGHIỆP    NGÂN HÀNG    TÀI CHÍNH QUỐC TẾ    VĨ MÔ    SỐNG    THỊ TRƯỜNG    ...    DỮ LIỆU    Top 200
+    @{List A}    Create List   Home     THỜI SỰ    CHỨNG KHOÁN    BẤT ĐỘNG SẢN    DOANH NGHIỆP    NGÂN HÀNG    TÀI CHÍNH QUỐC TẾ    VĨ MÔ    SỐNG    THỊ TRƯỜNG    ...    Dữ liệu    Top 200
   
  
     FOR     ${index}    IN RANGE    0    10
@@ -49,5 +49,11 @@ HomeWork Session 7 - Homework 1
     Remove Values From List        ${List B}      ${EMPTY}
     Log    ${List A}
     Log    ${List B}
+# Count value in list A and B
+    ${A}        Count Values In List    ${List A}     NGÂN HÀNG
+    ${B}        Count values In List    ${List B}     NGÂN HÀNG
+    Should be equal   ${A}    ${B}
+
+
 # Compare List A and List B after remove some values
-    List Should Be Equal     ${List A}    ${List A}   
+    Lists Should Be Equal     ${List B}    ${List A}   
