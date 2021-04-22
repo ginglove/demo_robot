@@ -5,16 +5,15 @@ Library     Collections
 # Resource       ../Variable/Variable.robot
 
 *** Variables ***
-${Google_url}	https://dantri.com.vn/
+${url}	https://dantri.com.vn/
 ${browser}	Chrome
-${ignore_order} = "False"  
 ${Text}
  
 *** Keywords ***
 
 *** Test Cases ***
-HomeWork Session 6
-   Open Browser    ${Google_url}    ${browser}
+HomeWork Session 6 - Homework 1
+   Open Browser    ${url}    ${browser}
     Maximize Browser Window
     Sleep    1
      @{Expected_List}    Create List    Video    Sự kiện    Xã hội    Thế giới    Kinh doanh    Bất động sản    Thể thao    Việc làm    Nhân ái    Sức khỏe    Văn hóa    Giải trí

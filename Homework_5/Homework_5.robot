@@ -17,7 +17,7 @@ Search
     Click Element      ${btn_googlesearch}
 
 *** Test Cases ***
-HomeWork Session5
+HomeWork Session5 - Homework 1
 
     Open Browser    ${Google_url}    ${browser}
     Maximize Browser Window
