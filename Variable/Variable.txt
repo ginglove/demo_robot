@@ -1,3 +1,0 @@
-${LOGIN_URL}	https://www.lmax.com/global/demo-login		
-${HOME_URL}	https://www.lmax.com/		
-${BROWSER}	Chrome
